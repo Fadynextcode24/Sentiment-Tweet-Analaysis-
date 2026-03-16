@@ -1,0 +1,45 @@
+# 1) Bar chart toxic vs non-toxic counts
+counts = df[target_col].value_counts().sort_index()
+plt.figure(figsize=(6,4))
+plt.bar(['non-toxic', 'toxic'], counts.values, color=['tab:blue', 'tab:red'])
+plt.title('Toxic vs Non-Toxic Comment Counts')
+plt.ylabel('Count')
+plt.show()
+
+# 2) Top 20 common words in toxic and non-toxic comments
+from collections import Counter
+
+toxic_comments = ' '.join(df[df[target_col] == 1]['clean_comment'].tolist())
+non_toxic_comments = ' '.join(df[df[target_col] == 0]['clean_comment'].tolist())
+
+toxic_words = Counter(toxic_comments.split())
+non_toxic_words = Counter(non_toxic_comments.split())
+
+toxic_top = toxic_words.most_common(20)
+non_toxic_top = non_toxic_words.most_common(20)
+
+# Plot top 20 toxic words
+plt.figure(figsize=(10,5))
+words, freqs = zip(*toxic_top)
+plt.barh(words[::-1], freqs[::-1], color='tab:red')
+plt.title('Top 20 Most Common Words in Toxic Comments')
+plt.xlabel('Frequency')
+plt.tight_layout()
+plt.show()
+
+# Plot top 20 non-toxic words
+plt.figure(figsize=(10,5))
+words, freqs = zip(*non_toxic_top)
+plt.barh(words[::-1], freqs[::-1], color='tab:blue')
+plt.title('Top 20 Most Common Words in Non-Toxic Comments')
+plt.xlabel('Frequency')
+plt.tight_layout()
+plt.show()
+
+# Confusion matrix for model
+plt.figure(figsize=(6,5))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['non-toxic','toxic'], yticklabels=['non-toxic','toxic'])
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix')
+plt.show()
