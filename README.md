@@ -1,15 +1,13 @@
 <div align="center">
 
-# TWEET SENTIMENT ANALYSIS
+# 🐦 Tweet Sentiment Analysis
 
-A Machine Learning micro project demonstrating the complete ML workflow—from data preprocessing and exploratory data analysis to model training, evaluation, and prediction.
+A Machine Learning project that classifies tweets into **Positive**, **Negative**, or **Neutral** sentiments using Natural Language Processing (NLP) and Scikit-learn.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?style=for-the-badge&logo=numpy)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-orange?style=for-the-badge&logo=scikitlearn)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy)
 
 </div>
 
@@ -17,82 +15,56 @@ A Machine Learning micro project demonstrating the complete ML workflow—from d
 
 ## 📖 Overview
 
-This project showcases the implementation of a Machine Learning pipeline using Python and Scikit-learn. It includes data preprocessing, feature engineering, model training, performance evaluation, and prediction generation.
-
-The project is intended for academic learning and practical understanding of machine learning concepts.
+This project uses Natural Language Processing (NLP) and Machine Learning techniques to analyze the sentiment of tweets. The model is trained on labeled tweet data to classify text into positive, negative, or neutral sentiment categories.
 
 ---
 
 ## ✨ Features
 
-- 📂 Dataset loading and preprocessing
-- 📊 Exploratory Data Analysis (EDA)
-- 🧹 Data cleaning and feature engineering
-- 🤖 Machine Learning model training
-- 📈 Performance evaluation
-- 🔮 Prediction on unseen data
-- 📉 Data visualization
+- 📂 Load and preprocess tweet datasets
+- 🧹 Clean and normalize text
+- 📝 Tokenization and feature extraction
+- 🤖 Train Machine Learning models
+- 📊 Evaluate model performance
+- 🔮 Predict sentiment for new tweets
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| Python | Programming Language |
-| Pandas | Data Manipulation |
-| NumPy | Numerical Computing |
-| Matplotlib | Data Visualization |
-| Scikit-learn | Machine Learning |
-| Jupyter Notebook | Development Environment |
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Jupyter Notebook
 
 ---
 
 ## 📁 Project Structure
 
-```
-mla-micro-project/
+```text
+tweet-sentiment-analysis/
 │
 ├── dataset/
-│   └── dataset.csv
-│
 ├── notebooks/
-│   └── MLA_Project.ipynb
-│
 ├── models/
-│
 ├── images/
-│
 ├── requirements.txt
-├── README.md
-└── LICENSE
+└── README.md
 ```
 
 ---
 
 ## ⚙️ Installation
 
-Clone the repository
-
 ```bash
-git clone https://github.com/Fadynextcode24/mla-micro-project.git
-```
+git clone https://github.com/Fadynextcode24/tweet-sentiment-analysis.git
 
-Navigate to the project
+cd tweet-sentiment-analysis
 
-```bash
-cd mla-micro-project
-```
-
-Install dependencies
-
-```bash
 pip install -r requirements.txt
-```
 
-Run the notebook
-
-```bash
 jupyter notebook
 ```
 
@@ -100,48 +72,18 @@ jupyter notebook
 
 ## 🚀 Workflow
 
-```
-Dataset
-   │
-   ▼
-Data Cleaning
-   │
-   ▼
-Feature Engineering
-   │
-   ▼
-Train-Test Split
-   │
-   ▼
-Model Training
-   │
-   ▼
-Evaluation
-   │
-   ▼
-Prediction
-```
+1. Load Dataset
+2. Clean Tweet Text
+3. Feature Extraction
+4. Train Machine Learning Model
+5. Evaluate Accuracy
+6. Predict Tweet Sentiment
 
 ---
 
-## 📊 Machine Learning Pipeline
+## 📊 Model Evaluation
 
-- Import Dataset
-- Handle Missing Values
-- Encode Categorical Variables
-- Feature Scaling (if required)
-- Split Training & Testing Data
-- Train Machine Learning Model
-- Evaluate Performance
-- Generate Predictions
-
----
-
-## 📈 Evaluation Metrics
-
-Depending on the problem type, the project may use:
-
-### Classification
+The model is evaluated using:
 
 - Accuracy
 - Precision
@@ -149,36 +91,21 @@ Depending on the problem type, the project may use:
 - F1 Score
 - Confusion Matrix
 
-### Regression
-
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-
 ---
 
-## 📷 Sample Output
+## 📷 Sample Results
 
-Add screenshots of:
-
-- Dataset preview
-- Graphs
-- Model accuracy
-- Confusion matrix
-- Prediction output
-
-inside an `images/` folder.
+Add screenshots inside the `images/` folder.
 
 Example:
 
 ```markdown
-![Accuracy](images/accuracy.png)
+![Confusion Matrix](images/confusion_matrix.png)
 ```
 
 ---
 
-## 📚 Libraries Used
+## 📚 Libraries
 
 ```text
 pandas
@@ -190,55 +117,9 @@ jupyter
 
 ---
 
-## 🎯 Learning Outcomes
-
-- Data preprocessing techniques
-- Feature engineering
-- Model building
-- Performance evaluation
-- Machine Learning workflow
-- Python for Data Science
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork the repository
-2. Create a new branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit changes
-
-```bash
-git commit -m "Add new feature"
-```
-
-4. Push the branch
-
-```bash
-git push origin feature-name
-```
-
-5. Open a Pull Request
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-**Fady**
-
-GitHub: https://github.com/Fadynextcode24
 
 ---
 
