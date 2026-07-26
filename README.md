@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🐦 Tweet Sentiment Analysis
+# Tweet Sentiment Analysis
 
-A Machine Learning project that classifies tweets into **Positive**, **Negative**, or **Neutral** sentiments using Natural Language Processing (NLP) and Scikit-learn.
+A machine learning project that analyzes the sentiment of tweets using Natural Language Processing (NLP) techniques and Scikit-learn.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-orange?style=for-the-badge&logo=scikitlearn)
@@ -13,24 +13,23 @@ A Machine Learning project that classifies tweets into **Positive**, **Negative*
 
 ---
 
-## 📖 Overview
+## Overview
 
-This project uses Natural Language Processing (NLP) and Machine Learning techniques to analyze the sentiment of tweets. The model is trained on labeled tweet data to classify text into positive, negative, or neutral sentiment categories.
-
----
-
-## ✨ Features
-
-- 📂 Load and preprocess tweet datasets
-- 🧹 Clean and normalize text
-- 📝 Tokenization and feature extraction
-- 🤖 Train Machine Learning models
-- 📊 Evaluate model performance
-- 🔮 Predict sentiment for new tweets
+This project implements a tweet sentiment analysis model using machine learning. It includes data preprocessing, text cleaning, feature extraction, model training, and evaluation to classify tweets based on their sentiment.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
+
+- Data preprocessing and cleaning
+- Text vectorization
+- Model training
+- Performance evaluation
+- Sentiment prediction
+
+---
+
+## Tech Stack
 
 - Python
 - Pandas
@@ -41,7 +40,7 @@ This project uses Natural Language Processing (NLP) and Machine Learning techniq
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 tweet-sentiment-analysis/
@@ -56,34 +55,37 @@ tweet-sentiment-analysis/
 
 ---
 
-## ⚙️ Installation
+## Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/Fadynextcode24/tweet-sentiment-analysis.git
+```
 
+Move into the project directory:
+
+```bash
 cd tweet-sentiment-analysis
+```
 
+Install the required packages:
+
+```bash
 pip install -r requirements.txt
+```
 
+Launch Jupyter Notebook:
+
+```bash
 jupyter notebook
 ```
 
 ---
 
-## 🚀 Workflow
+## Model Evaluation
 
-1. Load Dataset
-2. Clean Tweet Text
-3. Feature Extraction
-4. Train Machine Learning Model
-5. Evaluate Accuracy
-6. Predict Tweet Sentiment
-
----
-
-## 📊 Model Evaluation
-
-The model is evaluated using:
+The model is evaluated using the following metrics:
 
 - Accuracy
 - Precision
@@ -93,9 +95,9 @@ The model is evaluated using:
 
 ---
 
-## 📷 Sample Results
+## Sample Output
 
-Add screenshots inside the `images/` folder.
+You can add screenshots of the model output, confusion matrix, or visualizations in the `images/` folder.
 
 Example:
 
@@ -105,26 +107,6 @@ Example:
 
 ---
 
-## 📚 Libraries
-
-```text
-pandas
-numpy
-matplotlib
-scikit-learn
-jupyter
-```
-
----
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
-
----
-
-<div align="center">
-
-⭐ If you found this project useful, consider giving it a star!
-
-</div>
