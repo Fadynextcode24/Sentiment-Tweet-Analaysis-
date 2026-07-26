@@ -95,17 +95,6 @@ The model is evaluated using the following metrics:
 
 ---
 
-## Sample Output
-
-You can add screenshots of the model output, confusion matrix, or visualizations in the `images/` folder.
-
-Example:
-
-```markdown
-![Confusion Matrix](images/confusion_matrix.png)
-```
-
----
 
 ## License
 
